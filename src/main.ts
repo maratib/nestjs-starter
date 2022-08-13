@@ -47,8 +47,8 @@ async function bootstrap() {
     .addBearerAuth()
     .build();
 
-  // const document = SwaggerModule.createDocument(app, configApi);
-  // SwaggerModule.setup('swagger', app, document);
+  const document = SwaggerModule.createDocument(app, configApi);
+  SwaggerModule.setup('swagger', app, document);
 
   await app.listen(port, () => {
     logger.debug(`Using ENV : ${env_name}`);
