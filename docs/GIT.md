@@ -28,4 +28,10 @@ git pull origin main
 git merge test
 git push origin main
 
+# Pull main branch to test
+git checkout test    # move on your branch (make sure it exists)
+git fetch origin          # fetch all changes
+git pull origin main    # pull changes from the origin remote, master branch and merge them into my_branch
+git push origin test # push my_branch
+
  ```
