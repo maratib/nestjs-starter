@@ -17,10 +17,15 @@ git add .
 # This command discards the most recent stashed changeset.
  git stash drop 
 
-# Merge a test branch to master
-git checkout master
-git pull origin master
+# Merge a test branch to main
+# Suppose you are working in test branch and want to commit it to main branch, follow these steps
+git add .
+git commit -m "Final commit to test"
+git push 
+
+git checkout main
+git pull origin main
 git merge test
-git push origin master
+git push origin main
 
  ```

@@ -1,2 +1,2 @@
-# integrow
+# Nest.js starter project
 
