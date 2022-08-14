@@ -20,7 +20,8 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "orm": "cross-env NODE_ENV=dev typeorm-ts-node-commonjs -d ./src/config/typeorm.config.ts",
-    "db": "npm run orm schema:sync"
+    "db": "npm run orm schema:sync",
+    "clear_jest": "jest --clearCache"
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
