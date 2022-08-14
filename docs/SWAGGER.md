@@ -22,6 +22,9 @@ const document = SwaggerModule.createDocument(app, configApi);
 ```bash
 # Swagger Url:
 Visit: http://localhost:3000/swagger
+
+# For JSON Response
+http://localhost:3000/swagger-json
 ```
 
 
